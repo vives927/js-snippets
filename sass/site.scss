@@ -1,4 +1,5 @@
 * {
+    -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
 }
 
@@ -22,6 +23,20 @@ body {
     text-decoration: none;
 }
 
+.fontSize {
+    margin: 0 0 20px;
+    overflow: hidden;
+
+    .largerFont,
+    .smallerFont {
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        padding: 7px 10px;
+        text-decoration: none;
+    }
+}
+
 .longList {
     float: left;
     width: 50%;
@@ -29,29 +44,15 @@ body {
 
 .twoCol {
     overflow: hidden;
-}
 
-.twoCol .col {
-    float: left;
-    width: 49%;
-    margin-right: 2%;
-    background: grey;
-}
+    .col {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+        background: grey;
+    }
 
-.twoCol .col:last-child {
-    margin-right: 0;
-}
-
-.fontSize {
-    margin: 0 0 20px;
-    overflow: hidden;
-}
-
-.largerFont,
-.smallerFont {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    padding: 7px 10px;
-    text-decoration: none;
+    .col:last-child {
+        margin-right: 0;
+    }
 }

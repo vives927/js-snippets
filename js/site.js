@@ -19,6 +19,25 @@ var jsSnippets = jsSnippets || {};
     });
 }(jQuery));
 
+
+/* Search bar */
+(function ($) {
+    'use strict';
+    $('#btnHeaderSearch').on('click', function (e) {
+        var searchText = $('#txtHeaderSearch').val(),
+            searchUrl = window.location.protocol + '//' + window.location.host + '/search/' + '?q=' + searchText;
+        e.preventDefault();
+        window.location = searchUrl;
+    });
+    $("#txtHeaderSearch").keyup(function (e) {
+        if (e.keyCode == 13) {
+            $("#btnHeaderSearch").click();
+        }
+    });
+}(jQuery));
+
+
+
 /* Split list into two even columns */
 (function(exports, $) {
     'use strict';
