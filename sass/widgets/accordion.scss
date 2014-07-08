@@ -1,0 +1,63 @@
+.WidgetAccordion {
+    $maxWidth: 768px;
+    $minWidth: 769px;
+    $titleColor: grey;
+    $titleTextColor: white;
+    $titleHoverColor: green;
+    $titleActiveColor: green;
+    $descriptionColor: white;
+
+    .group {
+        margin: 0 0 1px;
+    }
+
+    .title a {
+        position: relative;
+        display: block;
+        height: 32px;
+        padding: 0 10px;
+        background: $titleColor;
+        color: $titleTextColor;
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 400;
+        text-decoration: none;
+
+        &:after {
+            position: relative;
+            float: right;
+            content: "+";
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &:hover {
+            background: $titleHoverColor;
+        }
+    }
+
+    .active .title a {
+        background: $titleActiveColor;
+
+        &:after {
+            content: "\2013";
+        }
+    }
+
+    .desc {
+        display: none;
+        overflow: hidden;
+        padding: 15px 20px;
+        background: $descriptionColor;
+    }
+
+    .active .desc {
+        display: block;
+    }
+
+    @media (max-width: $maxWidth) {
+        .desc {
+            padding: 10px;
+        }
+    }
+}
