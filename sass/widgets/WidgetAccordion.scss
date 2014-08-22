@@ -1,11 +1,11 @@
+@import "../partials/base";
+
 .WidgetAccordion {
-    $maxWidth: 768px;
-    $minWidth: 769px;
-    $titleColor: grey;
-    $titleTextColor: white;
-    $titleHoverColor: green;
-    $titleActiveColor: green;
-    $descriptionColor: white;
+    $titleColor: #797e7c;
+    $titleTextColor: #fff;
+    $titleHoverColor: #0a6d50;
+    $titleActiveColor: #0a6d50;
+    $descriptionColor: #fff;
 
     .group {
         margin: 0 0 1px;
@@ -55,7 +55,7 @@
         display: block;
     }
 
-    @media (max-width: $maxWidth) {
+    @media (max-width: 768px) {
         .desc {
             padding: 10px;
         }

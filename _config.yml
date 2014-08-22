@@ -1,0 +1,11 @@
+name: JS Snippets
+url: "http://localhost:7200"
+exclude: [
+    "sass"
+]
+keep_files: [
+    "css",
+    "_html"
+]
+port: 7200
+encoding: utf-8

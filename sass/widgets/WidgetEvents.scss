@@ -1,0 +1,107 @@
+@import "../partials/base";
+
+.WidgetEvents {
+    $headingColor: #0a6d50;
+    $dateColor: #4a8778;
+    $dateTextColor: #fff;
+
+    background: #fff;
+    padding: 10px;
+
+    .eventsHeader {
+        position: relative;
+        border-bottom: 4px solid $headingColor;
+
+        h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: $headingColor;
+            text-transform: uppercase;
+        }
+
+        .category {
+            display: block;
+            margin: 0 auto 7px;
+        }
+    }
+
+    .events {
+        padding: 10px 0 0;
+    }
+
+    .event {
+        padding: 15px 0;
+        overflow: hidden;
+        border-bottom: 1px solid #d2d2d2;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .date {
+            margin: 0 0 10px;
+            border-radius: 4px;
+            color: $dateTextColor;
+            background: $dateColor;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .info p {
+            padding: 0;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .time {
+            padding: 0 0 0 5px;
+        }
+
+        .desc {
+            font-size: 12px;
+        }
+    }
+
+    @include eq('medium') {
+        .eventsHeader {
+
+            .category {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .event {
+            .date {
+                float: left;
+                margin: 0;
+                height: 80px;
+                width: 98px;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    height: 100%;
+                    vertical-align: middle;
+                    margin-right: -0.25em;
+                }
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: inherit;
+                    padding: 10px;
+                }
+            }
+
+            .info {
+                padding: 0 0 0 123px;
+            }
+        }
+    }
+}

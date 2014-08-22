@@ -1,11 +1,11 @@
-@import "partials/eq";
+@import "../partials/eq";
 
 .WidgetTabs {
-    $tabColor: grey;
-    $tabTextColor: white;
-    $tabActiveColor: green;
-    $tabHoverColor: green;
-    $tabContentColor: white; 
+    $tabColor: #797e7c;
+    $tabTextColor: #fff;
+    $tabActiveColor: #0a6d50;
+    $tabHoverColor: #0a6d50;
+    $tabContentColor: #fff; 
     
     position: relative;
 

@@ -1,0 +1,150 @@
+@import "../partials/base";
+
+.WidgetMediaGallery {
+    background: #fff;
+    padding: 10px;
+
+    .thumbnailSlider {
+        position: relative;
+        margin: 0 auto;
+        padding: 10px 0;
+        max-width: 660px;
+
+        .track {
+            position: relative;
+            margin: 0 auto;
+            width: 222px;
+            height: 62px;
+            overflow: hidden;
+
+            ul {
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                overflow: hidden;
+                white-space: nowrap;
+                font-size: 0;
+            }
+
+            li {
+                display: inline-block;
+                vertical-align: top;
+                width: 110px;
+                height: 62px;
+                margin: 0 1px 0 0;
+                white-space: normal;
+                font-size: 16px;
+            }
+        }
+
+        .thumb {
+            display: block;
+            opacity: .4; 
+
+            &.active,
+            &:hover {
+                opacity: 1;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            opacity: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .arrow.left {
+            left: 10px;
+            border-right: 15px solid rgba(149,149,149,.7);
+        }
+
+        .arrow.right {
+            right: 10px;
+            border-left: 15px solid rgba(149,149,149,.7);
+        }
+
+        .arrow.enabled {
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+
+    .viewer {
+
+        .media {
+            margin: 0 -10px;
+        }
+
+        .media img {
+            width: 100%;
+        }
+
+        .info {
+            position: relative;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .progress {
+            font-size: 20px;
+
+            .of {
+                font-size: 12px;
+            }
+        }
+
+        .desc {
+            padding: 20px 0 0;
+            line-height: 20px;
+        }
+    }
+
+    @include eq('medium') {
+        .thumbnailSlider {
+            .track {
+                width: 333px;
+            }
+
+            .arrow.left {
+                left: 20px;
+            }
+
+            .arrow.right {
+                right: 20px;
+            }
+        }
+
+        .viewer {
+            .progress {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+
+    @include eq('large') {
+        .thumbnailSlider {
+            .track {
+                width: 555px;
+            }
+        }
+    }
+}

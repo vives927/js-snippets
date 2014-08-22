@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Snippets - {{ page.title }}</title>
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" href="css/site.css">
+        {% for sheet in page.styles %}
+            <link rel="stylesheet" href="css/{{sheet}}">
+        {% endfor %}
+    </head>
+    <body>
+
+        {{ content }}
+
+        <script src="js/lib/jquery.js"></script>
+        <script src="js/lib/eq.js"></script>
+        <script src="js/lib/Dragger.js"></script>
+        <script src="js/lib/MediaQueryImgAttrs.js"></script>
+        <script src="js/lib/TrackSlide.js"></script>
+        <script src="js/lib/FluidSlider.js"></script>
+        <script src="js/site.js"></script>
+        {% for file in page.scripts %}
+            <script src="js/{{file}}"></script>
+        {% endfor %}
+    </body>
+</html>

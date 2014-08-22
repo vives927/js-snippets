@@ -1,0 +1,95 @@
+@import "../partials/base";
+
+.WidgetNews {
+    $headingColor: #0a6d50;
+
+    background: #fff;
+    padding: 10px;
+
+    .newsHeader {
+        position: relative;
+        border-bottom: 4px solid $headingColor;
+
+        h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: $headingColor;
+            text-transform: uppercase;
+        }
+
+        .category {
+            display: block;
+            margin: 0 auto 7px;
+        }
+    }
+
+    .articles {
+        padding: 10px 0 0;
+    }
+
+    .article {
+        padding: 15px 0;
+        overflow: hidden;
+        border-bottom: 1px solid #d2d2d2;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .thumb {
+            display: none;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .info p {
+            padding: 0 0 2px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .date {
+            font-size: 12px;
+        }
+
+        .desc {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .more a {
+            color: black;
+
+            &:after {
+                content: "\00a0\00bb";
+            }
+        }
+    }
+
+    @include eq('medium') {
+        .newsHeader {
+            .category {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        .article {
+            .thumb {
+                display: block;
+                float: left;
+                width: 98px;
+            }
+
+            .thumb + .info {
+                padding: 0 0 0 123px;
+            }
+        }
+    }
+}

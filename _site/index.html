@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Snippets - Widgets</title>
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" href="css/site.css">
+        
+            <link rel="stylesheet" href="css/widgets/WidgetAccordion.css">
+        
+            <link rel="stylesheet" href="css/widgets/WidgetTabs.css">
+        
+            <link rel="stylesheet" href="css/widgets/WidgetRotatingBanner.css">
+        
+            <link rel="stylesheet" href="css/widgets/WidgetEvents.css">
+        
+            <link rel="stylesheet" href="css/widgets/WidgetNews.css">
+        
+            <link rel="stylesheet" href="css/widgets/WidgetMediaGallery.css">
+        
+    </head>
+    <body>
+
+        <h1>Widgets</h1>
+<hr>
+
+<h2>Rotating Banner</h2>
+<div class="dropzone-sm">
+    <div class="widget">
+        <div class="WidgetRotatingBanner" data-eq-pts="small: 0, medium: 320, large: 768" data-delay="5">
+    <!--option to add class "noText" for no overlay on slides-->
+    <ul class="slides">
+        <li class="active">
+            <div class="image" data-desktop="contentimages/main-slider_1.jpg?w=1024&amp;h=445" data-tablet="contentimages/main-slider_1_tab.jpg?w=750&amp;h=326" data-mobile="contentimages/main-slider_1_mob.jpg?w=320&amp;h=240"></div>
+            <div class="overlay">
+                <p class="title">Featured News Headline Goes Right Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image" data-desktop="contentimages/main-slider_2.jpg" data-tablet="contentimages/main-slider_2_tab.jpg" data-mobile="contentimages/main-slider_2_mob.jpg"></div>
+            <div class="overlay">
+                <p class="title">Another Headline Goes Right Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+<div class="dropzone-med">
+    <div class="widget">
+        <div class="WidgetRotatingBanner" data-eq-pts="small: 0, medium: 320, large: 768" data-delay="5">
+    <!--option to add class "noText" for no overlay on slides-->
+    <ul class="slides">
+        <li class="active">
+            <div class="image" data-desktop="contentimages/main-slider_1.jpg?w=1024&amp;h=445" data-tablet="contentimages/main-slider_1_tab.jpg?w=750&amp;h=326" data-mobile="contentimages/main-slider_1_mob.jpg?w=320&amp;h=240"></div>
+            <div class="overlay">
+                <p class="title">Featured News Headline Goes Right Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image" data-desktop="contentimages/main-slider_2.jpg" data-tablet="contentimages/main-slider_2_tab.jpg" data-mobile="contentimages/main-slider_2_mob.jpg"></div>
+            <div class="overlay">
+                <p class="title">Another Headline Goes Right Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+<div class="dropzone-lg">
+    <div class="widget">
+        <div class="WidgetRotatingBanner" data-eq-pts="small: 0, medium: 320, large: 768" data-delay="5">
+    <!--option to add class "noText" for no overlay on slides-->
+    <ul class="slides">
+        <li class="active">
+            <div class="image" data-desktop="contentimages/main-slider_1.jpg?w=1024&amp;h=445" data-tablet="contentimages/main-slider_1_tab.jpg?w=750&amp;h=326" data-mobile="contentimages/main-slider_1_mob.jpg?w=320&amp;h=240"></div>
+            <div class="overlay">
+                <p class="title">Featured News Headline Goes Right Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </li>
+        <li>
+            <div class="image" data-desktop="contentimages/main-slider_2.jpg" data-tablet="contentimages/main-slider_2_tab.jpg" data-mobile="contentimages/main-slider_2_mob.jpg"></div>
+            <div class="overlay">
+                <p class="title">Another Headline Goes Right Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+
+<hr>
+<h2>Accordion</h2>
+<div class="dropzone-sm">
+    <div class="widget">
+        <div class="WidgetAccordion">
+    <div class="group active">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="dropzone-med">
+    <div class="widget">
+        <div class="WidgetAccordion">
+    <div class="group active">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="dropzone-lg">
+    <div class="widget">
+        <div class="WidgetAccordion">
+    <div class="group active">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+    <div class="group">
+        <div class="title"><a href="#">Title Goes Here</a></div>
+        <div class="desc">
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<hr>
+<h2>Tabs</h2>
+<div class="dropzone-sm">
+    <div class="widget">
+        <div class="WidgetTabs" data-eq-pts="small: 0, medium: 600">
+    <ul class="tabs">
+        <li class="active"><a href="#">Tab Content 1</a></li>
+        <li><a href="#">Tab Content 2</a></li>
+        <li><a href="#">Longer tab title goes here</a></li>
+    </ul>
+    <ul class="tabContent">
+        <li class="active">
+            <p>Fingerstache Intelligentsia try-hard ethical beard, authentic literally cornhole normcore Cosby sweater ennui banjo cardigan. Trust fund cornhole pour-over YOLO. Pour-over swag seitan, mlkshk selfies Brooklyn normcore yr gastropub pickled. Echo Park Kickstarter master cleanse distillery tousled actually Tumblr, deep v Thundercats keytar pickled pour-over mustache 90's. Tousled umami synth flannel, Neutra mumblecore Thundercats cred Pitchfork literally actually Echo Park semiotics hashtag. Banh mi wayfarers swag actually synth, ennui photo booth locavore slow-carb flannel yr pork belly leggings +1. Shoreditch whatever Marfa mixtape, American Apparel pop-up dreamcatcher DIY High Life cornhole stumptown organic trust fund Kickstarter.</p>
+        </li>
+        <li>
+            <p>American Apparel keytar paleo chia hoodie, raw denim letterpress craft beer selvage Shoreditch Etsy normcore twee farm-to-table Truffaut. Kickstarter put a bird on it squid tote bag VHS Portland bespoke. Bushwick cray put a bird on it whatever flannel. Intelligentsia typewriter chambray sartorial narwhal, ennui salvia gluten-free Blue Bottle authentic vinyl fingerstache ethnic hoodie. Paleo sriracha plaid yr small batch, art party actually kitsch organic. Seitan roof party Carles.</p>
+        </li>
+        <li>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+<div class="dropzone-med">
+    <div class="widget">
+        <div class="WidgetTabs" data-eq-pts="small: 0, medium: 600">
+    <ul class="tabs">
+        <li class="active"><a href="#">Tab Content 1</a></li>
+        <li><a href="#">Tab Content 2</a></li>
+        <li><a href="#">Longer tab title goes here</a></li>
+    </ul>
+    <ul class="tabContent">
+        <li class="active">
+            <p>Fingerstache Intelligentsia try-hard ethical beard, authentic literally cornhole normcore Cosby sweater ennui banjo cardigan. Trust fund cornhole pour-over YOLO. Pour-over swag seitan, mlkshk selfies Brooklyn normcore yr gastropub pickled. Echo Park Kickstarter master cleanse distillery tousled actually Tumblr, deep v Thundercats keytar pickled pour-over mustache 90's. Tousled umami synth flannel, Neutra mumblecore Thundercats cred Pitchfork literally actually Echo Park semiotics hashtag. Banh mi wayfarers swag actually synth, ennui photo booth locavore slow-carb flannel yr pork belly leggings +1. Shoreditch whatever Marfa mixtape, American Apparel pop-up dreamcatcher DIY High Life cornhole stumptown organic trust fund Kickstarter.</p>
+        </li>
+        <li>
+            <p>American Apparel keytar paleo chia hoodie, raw denim letterpress craft beer selvage Shoreditch Etsy normcore twee farm-to-table Truffaut. Kickstarter put a bird on it squid tote bag VHS Portland bespoke. Bushwick cray put a bird on it whatever flannel. Intelligentsia typewriter chambray sartorial narwhal, ennui salvia gluten-free Blue Bottle authentic vinyl fingerstache ethnic hoodie. Paleo sriracha plaid yr small batch, art party actually kitsch organic. Seitan roof party Carles.</p>
+        </li>
+        <li>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+<div class="dropzone-lg">
+    <div class="widget">
+        <div class="WidgetTabs" data-eq-pts="small: 0, medium: 600">
+    <ul class="tabs">
+        <li class="active"><a href="#">Tab Content 1</a></li>
+        <li><a href="#">Tab Content 2</a></li>
+        <li><a href="#">Longer tab title goes here</a></li>
+    </ul>
+    <ul class="tabContent">
+        <li class="active">
+            <p>Fingerstache Intelligentsia try-hard ethical beard, authentic literally cornhole normcore Cosby sweater ennui banjo cardigan. Trust fund cornhole pour-over YOLO. Pour-over swag seitan, mlkshk selfies Brooklyn normcore yr gastropub pickled. Echo Park Kickstarter master cleanse distillery tousled actually Tumblr, deep v Thundercats keytar pickled pour-over mustache 90's. Tousled umami synth flannel, Neutra mumblecore Thundercats cred Pitchfork literally actually Echo Park semiotics hashtag. Banh mi wayfarers swag actually synth, ennui photo booth locavore slow-carb flannel yr pork belly leggings +1. Shoreditch whatever Marfa mixtape, American Apparel pop-up dreamcatcher DIY High Life cornhole stumptown organic trust fund Kickstarter.</p>
+        </li>
+        <li>
+            <p>American Apparel keytar paleo chia hoodie, raw denim letterpress craft beer selvage Shoreditch Etsy normcore twee farm-to-table Truffaut. Kickstarter put a bird on it squid tote bag VHS Portland bespoke. Bushwick cray put a bird on it whatever flannel. Intelligentsia typewriter chambray sartorial narwhal, ennui salvia gluten-free Blue Bottle authentic vinyl fingerstache ethnic hoodie. Paleo sriracha plaid yr small batch, art party actually kitsch organic. Seitan roof party Carles.</p>
+        </li>
+        <li>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+
+<hr>
+<h2>Events</h2>
+<div class="dropzone-sm">
+    <div class="widget">
+        <div class="WidgetEvents" data-eq-pts="small: 0, medium: 600">
+    <div class="eventsHeader">
+        <h3>Upcoming Events</h3>
+        <select class="category">
+            <option>Select a Category</option>
+        </select>
+    </div>
+    <div class="events">
+        <div class="event">
+            <div class="date"><span>1.5.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>1.5 - 1.8.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">8:00am - 5:00pm, each day</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>1.9.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>12.19.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="dropzone-med">
+    <div class="widget">
+        <div class="WidgetEvents" data-eq-pts="small: 0, medium: 600">
+    <div class="eventsHeader">
+        <h3>Upcoming Events</h3>
+        <select class="category">
+            <option>Select a Category</option>
+        </select>
+    </div>
+    <div class="events">
+        <div class="event">
+            <div class="date"><span>1.5.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>1.5 - 1.8.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">8:00am - 5:00pm, each day</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>1.9.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>12.19.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="dropzone-lg">
+    <div class="widget">
+        <div class="WidgetEvents" data-eq-pts="small: 0, medium: 600">
+    <div class="eventsHeader">
+        <h3>Upcoming Events</h3>
+        <select class="category">
+            <option>Select a Category</option>
+        </select>
+    </div>
+    <div class="events">
+        <div class="event">
+            <div class="date"><span>1.5.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>1.5 - 1.8.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">8:00am - 5:00pm, each day</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>1.9.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus.</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date"><span>12.19.14</span></div>
+            <div class="info">
+                <p class="title">Event Title Goes Right Here</p>
+                <p class="location">Location Title <span class="time">7:00pm - 10:00pm</span></p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<hr>
+<h2>News</h2>
+<div class="dropzone-sm">
+    <div class="widget">
+        <div class="WidgetNews" data-eq-pts="small: 0, medium: 600">
+    <div class="newsHeader">
+        <h3>Latest News</h3>
+        <select class="category">
+            <option>Select a Category</option>
+        </select>
+    </div>
+    <div class="articles">
+        <div class="article">
+            <!--<img src="contentimages/general-4.jpg?w=100&amp;h=100" alt="" class="thumb">-->
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">March 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="contentimages/general-4.jpg" alt="" class="thumb">
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">February 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="contentimages/general-4.jpg" alt="" class="thumb">
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="dropzone-med">
+    <div class="widget">
+        <div class="WidgetNews" data-eq-pts="small: 0, medium: 600">
+    <div class="newsHeader">
+        <h3>Latest News</h3>
+        <select class="category">
+            <option>Select a Category</option>
+        </select>
+    </div>
+    <div class="articles">
+        <div class="article">
+            <!--<img src="contentimages/general-4.jpg?w=100&amp;h=100" alt="" class="thumb">-->
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">March 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="contentimages/general-4.jpg" alt="" class="thumb">
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">February 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="contentimages/general-4.jpg" alt="" class="thumb">
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="dropzone-lg">
+    <div class="widget">
+        <div class="WidgetNews" data-eq-pts="small: 0, medium: 600">
+    <div class="newsHeader">
+        <h3>Latest News</h3>
+        <select class="category">
+            <option>Select a Category</option>
+        </select>
+    </div>
+    <div class="articles">
+        <div class="article">
+            <!--<img src="contentimages/general-4.jpg?w=100&amp;h=100" alt="" class="thumb">-->
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">March 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="contentimages/general-4.jpg" alt="" class="thumb">
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">February 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="contentimages/general-4.jpg" alt="" class="thumb">
+            <div class="info">
+                <p class="title">News Headline Goes Here</p>
+                <p class="date">January 1, 2014</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend, metus sed mattis luctus, turpis risus. Sed sed tincidunt lacus, quis sollicitudin augue. Sed elementum sed eros.</p>
+                <p class="more"><a href="#" title="">Read More</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<hr>
+<h2>Media Gallery</h2>
+<div class="dropzone-sm">
+    <div class="widget">
+        <div class="WidgetMediaGallery" data-eq-pts="small: 0, medium: 600, large: 1024">
+    <div class="thumbnailSlider slider">
+        <div class="track">
+            <ul>
+                <li>
+                    <a href="contentimages/flower_1.jpg?w=700&amp;h=330" title="Flower 1" class="thumb" data-type="image" data-desc="This is an example of a photo or video widget. This widget may be used to show a single gallery of photos or videos. Optional description text goes here. Youtube is generally utilized as the host for videos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.">
+                        <img src="contentimages/flower_1.jpg?w=110&amp;h=62" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="eo6lY_uesHw" title="Flower 2" class="thumb" data-type="video" data-desc="">
+                        <!--thumbnail from youtube-->
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_3.jpg" title="Flower 3" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_3.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_4.jpg" title="Flower 4" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_4.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_5.jpg" title="Flower 5" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_5.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_6.jpg" title="Flower 6" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_6.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_7.jpg" title="Flower 7" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_7.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_8.jpg" title="Flower 8" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_8.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="viewer">
+        <div class="media"><!--image or embed code for video from thumbnail "href" attribute, w=700, h=330--></div>
+        <div class="info">
+            <div class="title"><!--title from thumbnail "title" attribute--></div>
+            <div class="progress">
+                <span class="current"><!--active thumbnail in slider--></span> 
+                <span class="of">of</span> 
+                <span class="total"><!--total number of thumbnails in slider--></span>
+            </div>
+            <div class="desc"><!--description from thumbnail "data-desc" attribute--></div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="dropzone-med">
+    <div class="widget">
+        <div class="WidgetMediaGallery" data-eq-pts="small: 0, medium: 600, large: 1024">
+    <div class="thumbnailSlider slider">
+        <div class="track">
+            <ul>
+                <li>
+                    <a href="contentimages/flower_1.jpg?w=700&amp;h=330" title="Flower 1" class="thumb" data-type="image" data-desc="This is an example of a photo or video widget. This widget may be used to show a single gallery of photos or videos. Optional description text goes here. Youtube is generally utilized as the host for videos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.">
+                        <img src="contentimages/flower_1.jpg?w=110&amp;h=62" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="eo6lY_uesHw" title="Flower 2" class="thumb" data-type="video" data-desc="">
+                        <!--thumbnail from youtube-->
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_3.jpg" title="Flower 3" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_3.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_4.jpg" title="Flower 4" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_4.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_5.jpg" title="Flower 5" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_5.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_6.jpg" title="Flower 6" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_6.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_7.jpg" title="Flower 7" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_7.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_8.jpg" title="Flower 8" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_8.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="viewer">
+        <div class="media"><!--image or embed code for video from thumbnail "href" attribute, w=700, h=330--></div>
+        <div class="info">
+            <div class="title"><!--title from thumbnail "title" attribute--></div>
+            <div class="progress">
+                <span class="current"><!--active thumbnail in slider--></span> 
+                <span class="of">of</span> 
+                <span class="total"><!--total number of thumbnails in slider--></span>
+            </div>
+            <div class="desc"><!--description from thumbnail "data-desc" attribute--></div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div class="dropzone-lg">
+    <div class="widget">
+        <div class="WidgetMediaGallery" data-eq-pts="small: 0, medium: 600, large: 1024">
+    <div class="thumbnailSlider slider">
+        <div class="track">
+            <ul>
+                <li>
+                    <a href="contentimages/flower_1.jpg?w=700&amp;h=330" title="Flower 1" class="thumb" data-type="image" data-desc="This is an example of a photo or video widget. This widget may be used to show a single gallery of photos or videos. Optional description text goes here. Youtube is generally utilized as the host for videos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate.">
+                        <img src="contentimages/flower_1.jpg?w=110&amp;h=62" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="eo6lY_uesHw" title="Flower 2" class="thumb" data-type="video" data-desc="">
+                        <!--thumbnail from youtube-->
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_3.jpg" title="Flower 3" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_3.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_4.jpg" title="Flower 4" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_4.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_5.jpg" title="Flower 5" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_5.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_6.jpg" title="Flower 6" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_6.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_7.jpg" title="Flower 7" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_7.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+                <li>
+                    <a href="contentimages/flower_8.jpg" title="Flower 8" class="thumb" data-type="image" data-desc="">
+                        <img src="contentimages/flower_8.jpg" alt="" width="110" height="62">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="viewer">
+        <div class="media"><!--image or embed code for video from thumbnail "href" attribute, w=700, h=330--></div>
+        <div class="info">
+            <div class="title"><!--title from thumbnail "title" attribute--></div>
+            <div class="progress">
+                <span class="current"><!--active thumbnail in slider--></span> 
+                <span class="of">of</span> 
+                <span class="total"><!--total number of thumbnails in slider--></span>
+            </div>
+            <div class="desc"><!--description from thumbnail "data-desc" attribute--></div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+        <script src="js/lib/jquery.js"></script>
+        <script src="js/lib/eq.js"></script>
+        <script src="js/lib/Dragger.js"></script>
+        <script src="js/lib/MediaQueryImgAttrs.js"></script>
+        <script src="js/lib/TrackSlide.js"></script>
+        <script src="js/lib/FluidSlider.js"></script>
+        <script src="js/site.js"></script>
+        
+            <script src="js/widgets/WidgetAccordion.js"></script>
+        
+            <script src="js/widgets/WidgetTabs.js"></script>
+        
+            <script src="js/widgets/WidgetRotatingBanner.js"></script>
+        
+            <script src="js/widgets/WidgetMediaGallery.js"></script>
+        
+    </body>
+</html>

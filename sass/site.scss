@@ -1,3 +1,5 @@
+@import "partials/base";
+
 * {
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
@@ -58,21 +60,18 @@ body {
     }
 }
 
-.dropzone-1 {
-    overflow: hidden;
-
-    .widget {
-        float: left;
-        width: 49%;
-        margin-right: 2%;
-    }
-
-    .widget:last-child {
-        margin-right: 0;
-    }
+.dropzone-sm {
+    width: percentage(1/3);
 }
 
-.dropzone-2 {
+.dropzone-med {
+    width: percentage(2/3);
+}
 
+.dropzone-lg {
+    width: 100%;
+}
 
+.widget {
+    margin-bottom: 30px;
 }
