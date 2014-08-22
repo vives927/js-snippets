@@ -1,0 +1,175 @@
+@import "partials/eq";
+
+.WidgetRotatingBanner {
+    $bulletColor: #85a199;
+    $bulletActiveColor: #0a6d50;
+    $overlayColor: rgba(68,68,68,.8);
+    $overlayTextColor: #fff;
+    $largeHeight: 445px;
+    $largeWidth: 1024px;
+    $mediumWidth: 750px; 
+    $mediumHeight: 326px;
+    $smallWidth: 320px;
+    $smallHeight: 240px;
+
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .bullets {
+        position: absolute;
+        z-index: 15;
+        height: 33px;
+        width: 100%;
+        margin: 0;
+        padding: 7px 0 0;
+        list-style: none;
+        background-color: #3b3b3b;
+        text-align: center;
+        
+        li {
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            margin: 0 5px;
+            background: $bulletColor;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &.active {
+                background: $bulletActiveColor;
+            }
+        }
+    }
+
+    .slides {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        overflow: hidden;
+
+        li {
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            white-space: normal;
+            font-size: 14px;
+
+            &.active {
+                left: 0;
+            }
+        }
+    }
+
+    .image {
+        background-color: #666;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        max-width: 100%;
+        overflow: hidden;
+        padding: 10px;
+        background-color: $overlayColor;
+        color: $overlayTextColor;
+        font-size: 14px;
+
+        .title {
+            padding: 0;
+            font-weight: 400;
+        }
+
+        .date {
+            padding: 0 0 5px;
+            font-weight: 400;
+        }
+
+        .desc {
+            font-size: 12px;
+        }
+
+        .more {
+            padding: 0;
+            font-size: 12px;
+        }
+
+        .more a {
+            color: $overlayTextColor;
+
+            &:after {
+                content: "\00a0\00bb";
+            }
+        }
+    }
+
+    @include eq('small') {
+        .bullets {
+            top: $smallHeight;
+        }
+
+        .image {
+            background-size: $smallWidth $smallHeight;
+            height: $smallHeight;
+        }
+    }
+
+    @include eq('small', 'medium') {
+        //margin: 0 -10px 30px;
+        background-color: #3b3b3b;
+
+        .overlay {
+            position: static;
+            background-color: transparent;
+            width: 100%;
+            padding: 33px 10px 10px;
+        }
+    }
+
+    @include eq('medium') {
+        .image {
+            background-size: $mediumWidth $mediumHeight;
+            height: $mediumHeight;
+        }
+
+        .bullets {
+            top: $mediumHeight;
+        }
+    }
+
+    @include eq('large') {
+        .bullets {
+            top: 10px;
+            right: 10px;
+            text-align: right;
+            background-color: transparent;
+            height: auto;
+            padding: 0;
+        }
+
+        .slides {
+            height: $largeHeight;
+        }
+
+        .image {
+            background-size: $largeWidth $largeHeight;
+            height: $largeHeight;
+        }
+
+        .overlay {
+
+            .desc {
+                height: 57px;
+                overflow: hidden;
+            }
+        }
+    }
+}

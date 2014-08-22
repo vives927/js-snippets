@@ -1,11 +1,13 @@
+@import "partials/eq";
+
 .WidgetTabs {
-    $maxWidth: 768px;
-    $minWidth: 769px;
     $tabColor: grey;
     $tabTextColor: white;
     $tabActiveColor: green;
     $tabHoverColor: green;
     $tabContentColor: white; 
+    
+    position: relative;
 
     .tabs,
     .tabContent {
@@ -51,7 +53,7 @@
         }
     }
 
-    @media (max-width: $maxWidth) {
+    @include eq('small') {
 
         .tabs {
             position: absolute;
@@ -96,7 +98,7 @@
         }
     }
 
-    @media (min-width: $minWidth) {
+    @include eq('medium') {
 
         .tabs {
 

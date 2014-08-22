@@ -5,6 +5,9 @@
         <title>JS Snippets</title>
         <meta name="viewport" content="initial-scale=1">
         <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/widgets/accordion.css">
+        <link rel="stylesheet" href="css/widgets/tabs.css">
+        <link rel="stylesheet" href="css/widgets/rotatingBanner.css">
     </head>
     <body>
 
@@ -13,13 +16,131 @@
         <a class="smallerFont" href="#">Text -</a>
     </div>
 
+    <div class="WidgetRotatingBanner" data-eq-pts="small: 0, medium: 320, large: 768" data-delay="5">
+        <!--option to add class "noText" for no overlay on slides-->
+        <ul class="slides">
+            <li class="active">
+                <div class="image" data-desktop="contentimages/main-slider_1.jpg?w=1024&amp;h=445" data-tablet="contentimages/main-slider_1_tab.jpg?w=750&amp;h=326" data-mobile="contentimages/main-slider_1_mob.jpg?w=320&amp;h=240"></div>
+                <div class="overlay">
+                    <p class="title">Featured News Headline Goes Right Here</p>
+                    <p class="date">January 1, 2014</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <p class="more"><a href="#" title="">Read More</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="image" data-desktop="contentimages/main-slider_2.jpg" data-tablet="contentimages/main-slider_2_tab.jpg" data-mobile="contentimages/main-slider_2_mob.jpg"></div>
+                <div class="overlay">
+                    <p class="title">Another Headline Goes Right Here</p>
+                    <p class="date">January 1, 2014</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam.</p>
+                    <p class="more"><a href="#" title="">Read More</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br><br>
     <article>
         <div class="twoCol">
             <div class="col">
-                <p>Fingerstache Intelligentsia try-hard ethical beard, authentic literally cornhole normcore Cosby sweater ennui banjo cardigan. Trust fund cornhole pour-over YOLO. Pour-over swag seitan, mlkshk selfies Brooklyn normcore yr gastropub pickled. Echo Park Kickstarter master cleanse distillery tousled actually Tumblr, deep v Thundercats keytar pickled pour-over mustache 90's. Tousled umami synth flannel, Neutra mumblecore Thundercats cred Pitchfork literally actually Echo Park semiotics hashtag. Banh mi wayfarers swag actually synth, ennui photo booth locavore slow-carb flannel yr pork belly leggings +1. Shoreditch whatever Marfa mixtape, American Apparel pop-up dreamcatcher DIY High Life cornhole stumptown organic trust fund Kickstarter.</p>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
             </div>
             <div class="col">
-                <p>American Apparel keytar paleo chia hoodie, raw denim letterpress craft beer selvage Shoreditch Etsy normcore twee farm-to-table Truffaut. Kickstarter put a bird on it squid tote bag VHS Portland bespoke. Bushwick cray put a bird on it whatever flannel. Intelligentsia typewriter chambray sartorial narwhal, ennui salvia gluten-free Blue Bottle authentic vinyl fingerstache ethnic hoodie. Paleo sriracha plaid yr small batch, art party actually kitsch organic. Seitan roof party Carles.</p>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="dropzone-1">
+            <div class="widget">
+                <div class="WidgetAccordion">
+                    <div class="group active">
+                        <div class="title"><a href="#">Title Goes Here</a></div>
+                        <div class="desc">
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="title"><a href="#">Title Goes Here</a></div>
+                        <div class="desc">
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="title"><a href="#">Title Goes Here</a></div>
+                        <div class="desc">
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="WidgetRotatingBanner" data-eq-pts="small: 0, medium: 320, large: 768" data-delay="5">
+                    <!--option to add class "noText" for no overlay on slides-->
+                    <ul class="slides">
+                        <li class="active">
+                            <div class="image" data-desktop="contentimages/main-slider_1.jpg?w=1024&amp;h=445" data-tablet="contentimages/main-slider_1_tab.jpg?w=750&amp;h=326" data-mobile="contentimages/main-slider_1_mob.jpg?w=320&amp;h=240"></div>
+                            <div class="overlay">
+                                <p class="title">Featured News Headline Goes Right Here</p>
+                                <p class="date">January 1, 2014</p>
+                                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                <p class="more"><a href="#" title="">Read More</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image" data-desktop="contentimages/main-slider_2.jpg" data-tablet="contentimages/main-slider_2_tab.jpg" data-mobile="contentimages/main-slider_2_mob.jpg"></div>
+                            <div class="overlay">
+                                <p class="title">Another Headline Goes Right Here</p>
+                                <p class="date">January 1, 2014</p>
+                                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam interdum pulvinar nibh. Maecenas eget nunc in justo rhoncus aliquam.</p>
+                                <p class="more"><a href="#" title="">Read More</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="WidgetTabs" data-eq-pts="small: 0, medium: 600">
+                    <ul class="tabs">
+                        <li class="active"><a href="#">Tab Content 1</a></li>
+                        <li><a href="#">Tab Content 2</a></li>
+                        <li><a href="#">Longer tab title goes here</a></li>
+                    </ul>
+                    <ul class="tabContent">
+                        <li class="active">
+                            <p>Fingerstache Intelligentsia try-hard ethical beard, authentic literally cornhole normcore Cosby sweater ennui banjo cardigan. Trust fund cornhole pour-over YOLO. Pour-over swag seitan, mlkshk selfies Brooklyn normcore yr gastropub pickled. Echo Park Kickstarter master cleanse distillery tousled actually Tumblr, deep v Thundercats keytar pickled pour-over mustache 90's. Tousled umami synth flannel, Neutra mumblecore Thundercats cred Pitchfork literally actually Echo Park semiotics hashtag. Banh mi wayfarers swag actually synth, ennui photo booth locavore slow-carb flannel yr pork belly leggings +1. Shoreditch whatever Marfa mixtape, American Apparel pop-up dreamcatcher DIY High Life cornhole stumptown organic trust fund Kickstarter.</p>
+                        </li>
+                        <li>
+                            <p>American Apparel keytar paleo chia hoodie, raw denim letterpress craft beer selvage Shoreditch Etsy normcore twee farm-to-table Truffaut. Kickstarter put a bird on it squid tote bag VHS Portland bespoke. Bushwick cray put a bird on it whatever flannel. Intelligentsia typewriter chambray sartorial narwhal, ennui salvia gluten-free Blue Bottle authentic vinyl fingerstache ethnic hoodie. Paleo sriracha plaid yr small batch, art party actually kitsch organic. Seitan roof party Carles.</p>
+                        </li>
+                        <li>
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="dropzone-2">
+            <div class="widget">
+                <div class="WidgetTabs" data-eq-pts="small: 0, medium: 600">
+                    <ul class="tabs">
+                        <li class="active"><a href="#">Tab Content 1</a></li>
+                        <li><a href="#">Tab Content 2</a></li>
+                        <li><a href="#">Longer tab title goes here</a></li>
+                    </ul>
+                    <ul class="tabContent">
+                        <li class="active">
+                            <p>Fingerstache Intelligentsia try-hard ethical beard, authentic literally cornhole normcore Cosby sweater ennui banjo cardigan. Trust fund cornhole pour-over YOLO. Pour-over swag seitan, mlkshk selfies Brooklyn normcore yr gastropub pickled. Echo Park Kickstarter master cleanse distillery tousled actually Tumblr, deep v Thundercats keytar pickled pour-over mustache 90's. Tousled umami synth flannel, Neutra mumblecore Thundercats cred Pitchfork literally actually Echo Park semiotics hashtag. Banh mi wayfarers swag actually synth, ennui photo booth locavore slow-carb flannel yr pork belly leggings +1. Shoreditch whatever Marfa mixtape, American Apparel pop-up dreamcatcher DIY High Life cornhole stumptown organic trust fund Kickstarter.</p>
+                        </li>
+                        <li>
+                            <p>American Apparel keytar paleo chia hoodie, raw denim letterpress craft beer selvage Shoreditch Etsy normcore twee farm-to-table Truffaut. Kickstarter put a bird on it squid tote bag VHS Portland bespoke. Bushwick cray put a bird on it whatever flannel. Intelligentsia typewriter chambray sartorial narwhal, ennui salvia gluten-free Blue Bottle authentic vinyl fingerstache ethnic hoodie. Paleo sriracha plaid yr small batch, art party actually kitsch organic. Seitan roof party Carles.</p>
+                        </li>
+                        <li>
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -56,7 +177,14 @@
 
     <a class="backToTop" href="#">TOP</a>
 
-    <script src="js/jquery.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/eq.js"></script>
+    <script src="js/lib/dragger.js"></script>
+    <script src="js/lib/MediaQueryImgAttrs.js"></script>
+    <script src="js/lib/fluidSlider.js"></script>
     <script src="js/site.js"></script>
+    <script src="js/widgets/accordion.js"></script>
+    <script src="js/widgets/tabs.js"></script>
+    <script src="js/widgets/rotatingBanner.js"></script>
     </body>
 </html>
