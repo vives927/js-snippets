@@ -7,7 +7,7 @@
     $overlayTextColor: #fff;
     $largeHeight: 445px;
     $largeWidth: 1024px;
-    $mediumWidth: 750px; 
+    $mediumWidth: 768px; 
     $mediumHeight: 326px;
     $smallWidth: 320px;
     $smallHeight: 240px;
@@ -15,6 +15,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-color: #3b3b3b;
 
     .bullets {
         position: absolute;
@@ -69,6 +70,7 @@
         background-color: #666;
         background-repeat: no-repeat;
         background-position: center top;
+        background-size: cover;
     }
 
     .overlay {
@@ -111,20 +113,17 @@
         }
     }
 
-    @include eq('small') {
+    //@media (max-width: 320px) {
+    &[data-size='small'] {
         .bullets {
             top: $smallHeight;
         }
 
         .image {
-            background-size: $smallWidth $smallHeight;
+            //background-size: $smallWidth $smallHeight;
+            width: $smallWidth;
             height: $smallHeight;
         }
-    }
-
-    @include eq('small', 'medium') {
-        //margin: 0 -10px 30px;
-        background-color: #3b3b3b;
 
         .overlay {
             position: static;
@@ -134,18 +133,28 @@
         }
     }
 
-    @include eq('medium') {
-        .image {
-            background-size: $mediumWidth $mediumHeight;
-            height: $mediumHeight;
-        }
-
+    //@media (min-width: 321px) {
+    &[data-size='medium'] {
         .bullets {
             top: $mediumHeight;
         }
+
+        .image {
+            //background-size: $mediumWidth $mediumHeight;
+            width: $mediumWidth;
+            height: $mediumHeight;
+        }
+
+        .overlay {
+            position: static;
+            background-color: transparent;
+            width: 100%;
+            padding: 33px 10px 10px;
+        }
     }
 
-    @include eq('large') {
+    //@media (min-width: 768px) {
+    &[data-size='large'] {
         .bullets {
             top: 10px;
             right: 10px;
@@ -160,16 +169,14 @@
         }
 
         .image {
-            background-size: $largeWidth $largeHeight;
+            //background-size: $largeWidth $largeHeight;
+            width: $largeWidth;
             height: $largeHeight;
         }
 
-        .overlay {
-
-            .desc {
-                height: 57px;
-                overflow: hidden;
-            }
+        .overlay .desc {
+            height: 57px;
+            overflow: hidden;
         }
     }
 }

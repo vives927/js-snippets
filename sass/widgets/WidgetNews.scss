@@ -71,7 +71,7 @@
         }
     }
 
-    @include eq('medium') {
+    @media (min-width: 768px) {
         .newsHeader {
             .category {
                 position: absolute;

@@ -116,7 +116,7 @@
         }
     }
 
-    @include eq('medium') {
+    @media (min-width: 768px) {
         .thumbnailSlider {
             .track {
                 width: 333px;
@@ -140,7 +140,7 @@
         }
     }
 
-    @include eq('large') {
+    @media (min-width: 1024px) {
         .thumbnailSlider {
             .track {
                 width: 555px;

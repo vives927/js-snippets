@@ -31,44 +31,7 @@ var WidgetRotatingBanner = WidgetRotatingBanner || {};
 }(this));
 
 
-// Event Handler
-// https://gist.github.com/cuth/5731924
-(function (exports) {
-    'use strict';
-    exports.EventHandler = function () {
-        this.collection = {};
-    };
-    exports.EventHandler.prototype.bind = function (events, callback) {
-        var names = events.split(' '),
-            x, xlen = names.length;
-        for (x = 0; x < xlen; x += 1) {
-            if (typeof this.collection[names[x]] !== 'object') {
-                this.collection[names[x]] = [];
-            }
-            this.collection[names[x]].push(callback);
-        }
-    };
-    exports.EventHandler.prototype.trigger = function (name) {
-        var names = name.split(':'),
-            args = Array.prototype.slice.call(arguments, 1),
-            i, ilen = names.length,
-            pieceName = '',
-            events, x, xlen;
-        for (i = 0; i < ilen; i += 1) {
-            pieceName += names[i];
-            events = this.collection[pieceName];
-            if (typeof events === 'object') {
-                xlen = events.length;
-                for (x = 0; x < xlen; x += 1) {
-                    if (typeof events[x] === 'function') {
-                        events[x].apply(this, args);
-                    }
-                }
-            }
-            pieceName += ':';
-        }
-    };
-}(this));
+
 
 // Timer used for hero slider
 // https://gist.github.com/cuth/5732072
@@ -216,19 +179,30 @@ var WidgetRotatingBanner = WidgetRotatingBanner || {};
 (function (exports, $) {
     'use strict';
 
-    exports.sliderImages = new window.MediaQueryImgAttrs('.WidgetRotatingBanner .image', [
+
+    exports.elementQuery = new window.ElementQuery('.WidgetRotatingBanner', [
         {
-            'mediaQuery': '(max-width: 320px)',
-            'attrName': 'data-mobile'
+            'name': 'small',
+            'maxWidth': 320
         },
         {
-            'mediaQuery': '(max-width: 750px)',
-            'attrName': 'data-tablet'
+            'name': 'medium',
+            'minWidth': 321,
+            'maxWidth': 767
         },
         {
-            'attrName': 'data-desktop'
+            'name': 'large',
+            'minWidth': 768
         }
-    ]);
+    ], {
+        'callback': function ($el, size) {
+            $el.find('.image').each(function(i) {
+                var imageUrl = $(this).attr('data-' + size.toString());
+                $(this).css('background-image', 'url(' + imageUrl + ')');
+            });
+            // TO-DO: Fix the JS that changes CSS on resize
+        }
+    });
 
     exports.sliders = $.map($('.WidgetRotatingBanner'), function (widget) {
         var slider = new WidgetRotatingBanner.HeroSlider(widget);

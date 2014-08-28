@@ -53,8 +53,7 @@
         }
     }
 
-    @include eq('small') {
-
+    @media (max-width: 767px) {
         .tabs {
             position: absolute;
             width: 100%;
@@ -98,8 +97,7 @@
         }
     }
 
-    @include eq('medium') {
-
+    @media (min-width: 768px) {
         .tabs {
 
             > li {
