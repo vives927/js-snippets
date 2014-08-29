@@ -1,38 +1,5 @@
 var WidgetRotatingBanner = WidgetRotatingBanner || {};
 
-
-// Debounce
-// https://gist.github.com/cuth/6a23f6464ed58ec98bf5
-(function (exports) {
-    'use strict';
-    exports.debounce = function(func, wait, immediate) {
-        var timeout, args, context, timestamp, result;
-        return function() {
-            context = this;
-            args = arguments;
-            timestamp = new Date();
-            var later = function() {
-                var last = (new Date()) - timestamp;
-                if (last < wait) {
-                    timeout = setTimeout(later, wait - last);
-                } else {
-                    timeout = null;
-                    if (!immediate) result = func.apply(context, args);
-                }
-            };
-            var callNow = immediate && !timeout;
-            if (!timeout) {
-                timeout = setTimeout(later, wait);
-            }
-            if (callNow) result = func.apply(context, args);
-            return result;
-        };
-    };
-}(this));
-
-
-
-
 // Timer used for hero slider
 // https://gist.github.com/cuth/5732072
 (function (exports, $) {
@@ -141,8 +108,7 @@ var WidgetRotatingBanner = WidgetRotatingBanner || {};
     'use strict';
     var setHeight = function() {
             this.$el.find('.slides').removeAttr('style');
-            //console.log(this.$el.attr('data-eq-state'));
-            if (this.$el.attr('data-eq-state') !== 'large') {
+            if (this.$el.attr('data-size') !== 'large') {
                 var $overlay = this.$el.find('.slides .overlay'), 
                     textHeight = 0,
                     imageHeight = this.$el.find('.image').height();
@@ -179,7 +145,6 @@ var WidgetRotatingBanner = WidgetRotatingBanner || {};
 (function (exports, $) {
     'use strict';
 
-
     exports.elementQuery = new window.ElementQuery('.WidgetRotatingBanner', [
         {
             'name': 'small',
@@ -200,7 +165,6 @@ var WidgetRotatingBanner = WidgetRotatingBanner || {};
                 var imageUrl = $(this).attr('data-' + size.toString());
                 $(this).css('background-image', 'url(' + imageUrl + ')');
             });
-            // TO-DO: Fix the JS that changes CSS on resize
         }
     });
 

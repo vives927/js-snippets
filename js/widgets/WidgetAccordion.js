@@ -30,6 +30,21 @@ var WidgetAccordion = WidgetAccordion || {};
 (function (exports, $) {
     'use strict';
 
+    exports.elementQuery = new window.ElementQuery('.WidgetAccordion', [
+        {
+            'name': 'small',
+            'maxWidth': 767
+        },
+        {
+            'name': 'large',
+            'minWidth': 768
+        }
+    ], {
+        'callback': function ($el, size) {
+            
+        }
+    });
+
     exports.accordions = $.map($('.WidgetAccordion'), function (widget) {
         var accordion = new WidgetAccordion.Accordion(widget);
 

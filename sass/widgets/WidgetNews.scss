@@ -71,7 +71,8 @@
         }
     }
 
-    @media (min-width: 768px) {
+    &[data-size='large'] {
+    //@media (min-width: 768px) {
         .newsHeader {
             .category {
                 position: absolute;

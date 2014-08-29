@@ -36,6 +36,21 @@ var WidgetTabs = WidgetTabs || {};
 // run
 (function (exports, $) {
     'use strict';
+
+    exports.elementQuery = new window.ElementQuery('.WidgetTabs', [
+        {
+            'name': 'small',
+            'maxWidth': 767
+        },
+        {
+            'name': 'large',
+            'minWidth': 768
+        }
+    ], {
+        'callback': function ($el, size) {
+            
+        }
+    });
     
     exports.tabGroups = $.map($('.WidgetTabs'), function (widget) {
         var tabs = new WidgetTabs.Tabs(widget);

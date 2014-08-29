@@ -2,7 +2,6 @@
 
 .WidgetMediaGallery {
     background: #fff;
-    padding: 10px;
 
     .thumbnailSlider {
         position: relative;
@@ -85,17 +84,13 @@
 
     .viewer {
 
-        .media {
-            margin: 0 -10px;
-        }
-
         .media img {
             width: 100%;
         }
 
         .info {
             position: relative;
-            padding: 20px;
+            padding: 10px;
         }
 
         .title {
@@ -116,7 +111,8 @@
         }
     }
 
-    @media (min-width: 768px) {
+    &[data-size='medium'] {
+    //@media (min-width: 768px) {
         .thumbnailSlider {
             .track {
                 width: 333px;
@@ -140,11 +136,16 @@
         }
     }
 
-    @media (min-width: 1024px) {
+    &[data-size='large'] {
+    //@media (min-width: 1024px) {
         .thumbnailSlider {
             .track {
                 width: 555px;
             }
+        }
+
+        .viewer .info {
+            padding: 20px;
         }
     }
 }

@@ -163,6 +163,26 @@ var Google_API_Key = 'AIzaSyBLk4vEE-v8wZnIP3KlbVHUf-WGs7FJguY';
 (function (exports, $) {
     'use strict';
 
+    exports.elementQuery = new window.ElementQuery('.WidgetMediaGallery', [
+        {
+            'name': 'small',
+            'maxWidth': 767
+        },
+        {
+            'name': 'medium',
+            'minWidth': 768,
+            'maxWidth': 1023
+        },
+        {
+            'name': 'large',
+            'minWidth': 1024
+        }
+    ], {
+        'callback': function ($el, size) {
+            
+        }
+    });
+
     exports.galleries = $.map($('.WidgetMediaGallery'), function (widget) {
         var slider = new WidgetMediaGallery.Slider(widget);
         var swapper = new WidgetMediaGallery.Swapper(widget);

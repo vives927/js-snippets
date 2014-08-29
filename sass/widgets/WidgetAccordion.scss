@@ -55,7 +55,8 @@
         display: block;
     }
 
-    @media (max-width: 767px) {
+    &[data-size='small'] {
+    //@media (max-width: 767px) {
         .desc {
             padding: 10px;
         }

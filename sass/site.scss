@@ -8,9 +8,13 @@
 body {
     background: lightgrey;
     font-family: sans-serif;
-    max-width: 960px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 30px 0; 
+}
+
+p {
+    margin: 0 0 10px;
 }
 
 .backToTop {
