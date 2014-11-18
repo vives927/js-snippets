@@ -18,37 +18,34 @@
 
     .tabs {
 
-        > li {
+        .tab {
+            display: block;
+            height: 30px;
+            background: $tabColor;
+            color: $tabTextColor;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 30px;
+            overflow: hidden;
+            text-decoration: none;
 
-            > a {
-                display: block;
-                height: 30px;
-                background: $tabColor;
-                color: $tabTextColor;
-                text-transform: uppercase;
-                text-align: center;
-                line-height: 30px;
-                overflow: hidden;
-                text-decoration: none;
-
-                &:hover {
-                    background: $tabHoverColor;   
-                }
+            &:hover {
+                background: $tabHoverColor;   
             }
 
-            &.active > a {
+            &[aria-selected=true] {
                 background: $tabActiveColor;
             }
         }
     }
 
-    .tabContent > li {
+    .tab-content {
         display: none;
         background: $tabContentColor;
         padding: 40px 10px 10px;
         overflow: hidden;
 
-        &.active {
+        &[aria-hidden=false] {
             display: block;
         }
     }
@@ -60,14 +57,11 @@
             width: 100%;
             height: 30px;
 
-            > li {
+            .tab {
                 display: none;
 
-                &.active {
+                &[aria-selected=true] {
                     display: block;
-                }
-
-                &.active > a {
                     position: relative;
 
                     &:before {
@@ -93,7 +87,7 @@
             }
         }
 
-        .tabs.open > li {
+        .tabs.open .tab {
             display: block;
         }
     }
@@ -115,15 +109,15 @@
                     float: right;
                     padding: 0 0 0 2px;
                 }
+            }
 
-                > a {
-                    border-top-left-radius: 4px;
-                    border-top-right-radius: 4px;
-                }
+            .tab {
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
             }
         }
 
-        .tabContent > li {
+        .tab-content {
             padding: 20px;
         }
     }

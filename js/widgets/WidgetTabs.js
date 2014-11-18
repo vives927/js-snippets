@@ -4,15 +4,18 @@ var WidgetTabs = WidgetTabs || {};
     'use strict';
     var selectItem = function (e) {
             var item = e.currentTarget,
-                index = this.$selectorItems.index(item);
-            if (index === this.active) return;
+                id = $(item).attr('aria-controls');
+            // Ignore if item is already selected
+            if ($(item).is('[aria-selected=true]')) return;
             e.preventDefault();
             e.stopPropagation();
-            $(item).addClass('active');
-            this.$selectorItems.eq(this.active).removeClass('active');
-            this.$contentItems.eq(index).addClass('active');
-            this.$contentItems.eq(this.active).removeClass('active');
-            this.active = index;
+            // Hide unselected items
+            this.$selectorItems.attr('aria-selected', false).attr('tabindex', '-1');
+            this.$contentItems.attr('aria-hidden', true);
+            // Show selected items
+            $(item).attr('aria-selected', true).attr('tabindex', '0');
+            $('#' + id).attr('aria-hidden', false);
+            
             this.$selectorUL.removeClass('open');
         },
         openSelector = function (e) {
@@ -26,9 +29,8 @@ var WidgetTabs = WidgetTabs || {};
     exports.Tabs = function (el) {
         this.$el = $(el);
         this.$selectorUL = this.$el.find('.tabs');
-        this.$selectorItems = this.$selectorUL.find('li');
-        this.$contentItems = this.$el.find('.tabContent li');
-        this.active = this.$selectorItems.index(this.$selectorItems.filter('.active'));
+        this.$selectorItems = this.$selectorUL.find('.tab');
+        this.$contentItems = this.$el.find('.tab-content');
         bindEvents.call(this);
     };
 }(WidgetTabs, jQuery));
